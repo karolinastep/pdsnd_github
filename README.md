@@ -13,7 +13,11 @@ chicago.csv
 new_york_city.csv
 washington.csv
 
+Data provided by [Motivate](https://motivateco.com/), a bike share system provider for many major cities in the United States,
+and wrangled by [Udacity](https://www.udacity.com/).
+
 ### Credits
 https://github.com/udacity/pdsnd_github
+
 
 
