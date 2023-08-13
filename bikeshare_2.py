@@ -184,16 +184,27 @@ def user_stats(df):
 
 def raw_data(df):
     """Displays raw data based on request."""
-    
-    j = 0
+ 
+ #alternative approach recommended in the project review
     while True:
-        k = j+5
-        raw_d = input('Would you like to see raw data? Enter yes or no.\n').lower()
-        if raw_d != 'yes':
+        display_data = input('\nDo you want to view 5 rows of raw data? Please enter yes or no.\n')
+        if display_data.lower() != 'yes':
             break
-        for i in range(j,k,1):
-            print(df.iloc[i])
-        j += 5
+        print(tabulate(df_default.iloc[np.arange(0+i,5+i)], headers ="keys"))
+        i+=5
+
+#original approach
+    #j = 0
+    #while True:
+        #k = j+5
+        #raw_d = input('Would you like to see raw data? Enter yes or no.\n').lower()
+        #if raw_d != 'yes':
+            #break
+        #for i in range(j,k,1):
+            #print(df.iloc[i])
+        #j += 5
+        
+   
 
 def main():
     while True:
